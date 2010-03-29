@@ -1,0 +1,4 @@
+*~
+backups/
+.gitignore
+youcanSymlinkToThisFilewithADotgitignoresymlink
