@@ -8,15 +8,62 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/debug.js"></script>
     <!-- <script type="text/javascript" src='js/threadhack.js'></script> -->
+    <style>
+    * {
+        margin:0; padding:0;
+    }
+    body{
+        min-width:800px;
+        background-color:whitesmoke;s
+    }
+    .footer{
+        background-color:black;
+        color:whitesmoke;
+        width:100%;
+        height:10%;
+        position:absolute;
+        bottom:0;
+    }
+    #top{
+        width: 100%;
+        height:20%;
+        min-height:3em;
+        background-color:black;
+        color:grey;
+    }
+    .aside{
+        position:absolute;
+        top:0;
+        right:0;
+        background:whitesmoke;
+    }
+    .header{
+        width:100%;
+    }
+    .header h1{
+        margin:.3em auto;
+        text-align:center;
+    }
+    .header h2{
+        text-align:center;
+    }
+    
+    #core #odesk-hire-me-widget{
+        margin:3em auto .3em;
+        text-align:center;
+    }
+    
+    
+    </style>
     
   </head>
 
   <body id='main-body'>
   
 
-<!--
-    <div id="section top">
-    	<div class='nav'>
+
+    <div id="top" class="section">
+    	<!-- <div class='nav'>
 		    <ul>
 		      <li>
 		    <a target='_blank' href="http://gmail.google.com/gmail"> Gmail </a>-<a target='_blank' href="http://www.google.com/calendar/render?pli=1">Calendar</a>-<a target='_blank' href="http://www.thesaurus.com">Dicthesaurus</a>-    <a target='_blank' href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>-<a target='_blank' href="http://www.playlist.com">Music</a>
@@ -35,17 +82,30 @@
 		      </li>
 		     </ul>
 	     </div>
+	     
+	     -->
     </div>
-  -->
   
   	<div class="header title"> 
       <h1>Roy Ronalds</h1>
       <h2>is <span id='availability'><a href='mailto:roy.ronalds@gmail.com'>available</a></span> for freelance work.</h2>
     </div>
 
-<!--
+
     <div id="core" class='section'>
-      <div class="header title">
+    
+    
+        <div id='odesk-hire-me-widget'>
+            <!-- START Hire Me on oDesk Widget -->
+            <script language="JavaScript">
+            var odesk_widgets_width = 340;
+            var odesk_widgets_height = 230;
+            </script>
+            <script src="http://www.odesk.com/widgets/providers/v1/large/~~6d9bdd5c2722757b.js"></script>
+            <!-- END Hire Me on oDesk Widget -->
+        </div>
+    
+    <!--  <div class="header title">
         <img src="./i/creations/crystalshattering.gif" alt="Crystal Cysts" />
       </div>
       <div class="orange">
@@ -58,8 +118,10 @@
       <a target='_blank' href="./x/x.html">Internet</a>-
       <a target='_blank' href="http://tchalvak.pbwiki.com">Wiki</a>
       </div>
+      
+      -->
     </div>
--->
+
 <!--
     <div id="right" class='section'>
         <h3>Contact</h3>
@@ -67,7 +129,11 @@
     -->
     
 
-    <div class='footer' style="background-color:black;color:whitesmoke;">
+
+    <div class='footer' style="">
+    
+
+    
     <!--
 
       <div class='nav'>
@@ -90,10 +156,11 @@
     
     
     
-    <div class='aside tchalvak github com content' style='position:absolute;top:0;right:0;'>
+    <div class='aside tchalvak github com content'>
         <div id='threadhack-repository-link'><a href="http://github.com/tchalvak/threadhack">
-            Source code for royronalds.com on GitHub</a>
+            Source code for this site on GitHub</a>
         </div>
+        
     </div>
     
     
