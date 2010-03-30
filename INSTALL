@@ -1,0 +1,7 @@
+
+
+Instructions for getting clojure running:
+sudo apt-get install sun-java6-jdk
+
+Follow the steps via clojureX:
+http://github.com/citizen428/ClojureX
