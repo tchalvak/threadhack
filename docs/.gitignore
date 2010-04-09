@@ -3,3 +3,7 @@ backups/
 .gitignore
 youcanSymlinkToThisFilewithADotgitignoresymlink
 image_dump
+blueprint-css/
+www/fonts/*
+www/css/blueprint/plugins/
+www/crow-blog
