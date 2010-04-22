@@ -1,7 +1,155 @@
-
+The following are All (yes, all) dependencies for getting cow-blog/crow-blog running:
 
 Instructions for getting clojure running:
+
+
+JAVA INSTALL INSTRUCTIONS
+
+
+
 sudo apt-get install sun-java6-jdk
+
+$ sudo apt-get install sun-java6-bin sun-java6-jre sun-java6-jdk
+
+Setup the default Java version
+
+Ubuntu Linux comes with update-java-alternatives utility to updates all alternatives belonging to one runtime or development kit for the Java language. To select, Sun's JVM as provided in Ubuntu 7.10, enter:
+$ sudo update-java-alternatives -s java-6-sun
+
+You also need to edit a file called /etc/jvm. This file defines the default system JVM search order. Each JVM should list their JAVA_HOME compatible directory in this file. The default system JVM is the first one available from top to bottom. Open /etc/jvm
+$ sudo vi /etc/jvm
+
+Make sure /usr/lib/jvm/java-6-sun is added to the top of JVM list
+/usr/lib/jvm/java-6-sun
+
+At the end your file should read as follows:
+/usr/lib/jvm/java-6-sun
+/usr/lib/jvm/java-gcj
+/usr/lib/jvm/ia32-java-1.5.0-sun
+/usr/lib/jvm/java-1.5.0-sun
+/usr
+
+Save and close the file.
+
+Setup the environment variable
+
+You also need to setup JAVA_HOME and PATH variable. Open your $HOME/.bash_profile or /etc/profile (system wide) configuration. Open your .bash_profile file:
+$ vi $HOME/.bash_profile
+(either that or add it to the bashrc.  Yes!! That way worked! .bash_profile will only be run on re-login)
+
+Append following line:
+export JAVA_HOME=/usr/lib/jvm/java-6-sun
+export PATH=$PATH:$JAVA_HOME/bin
+
+Save and close the file.
+
+Test your new JDK
+
+Type the following command to display version:
+$ java -version
+
+Output:
+
+java version "1.6.0_03"
+Java(TM) SE Runtime Environment (build 1.6.0_03-b05)
+Java HotSpot(TM) Server VM (build 1.6.0_03-b05, mixed mode) 
+Try HelloWorld.java - first java program
+
+$ vi HelloWorld.java
+
+Append code:
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+Save and close the file. Compile HelloWorld.java and execute program by typing following two instructions:
+$ javac HelloWorld.java
+$ java HelloWorld
+
+
+END OF JAVA INSTALL INSTRUCTIONS
+
+Maybe do this as well??? sudo ln -s /usr/bin/javac /bin/javac
+
+java -version
+java version "1.6.0_19"
+Java(TM) SE Runtime Environment (build 1.6.0_19-b04)
+Java HotSpot(TM) 64-Bit Server VM (build 16.2-b04, mixed mode)
+
+
+
+
+
+
+
 
 Follow the steps via clojureX:
 http://github.com/citizen428/ClojureX
+
+Essentially, git clone git://github.com/citizen428/ClojureX.git
+cd ClojureX
+bin/create_symlink
+
+Tokyo-cabinet install:
+http://1978th.net/tokyocabinet/
+http://1978th.net/tokyocabinet/spex-en.html#installation
+
+apt-cache policy libbz2-dev bzip2 zlib1g zlib1g-dev gcc
+
+sudo apt-get install zlib1g
+sudo apt-get install zlib1g-dev
+sudo apt-get install bzip2
+sudo apt-get install libbz2-dev (This seems to be the standard unmet dependency when trying to configure)
+
+Download the java dependencies:
+http://www.1978th.net/tokyocabinet/javapkg/
+
+./configure
+make
+sudo make install
+
+http://1978th.net/tokyocabinet/javadoc/
+
+Add the following to the ~/.bash_profile:
+"
+CLASSPATH="$CLASSPATH:/usr/local/lib/tokyocabinet.jar"
+LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
+export CLASSPATH LD_LIBRARY_PATH
+The above settings can be specified by options of the runtime command.
+
+java -cp tokyocabinet.jar -Djava.library.path=. FooBarBaz ...
+"
+
+Compojure requires Leiningen, Leiningen Install:
+save the script: http://github.com/technomancy/leiningen/raw/stable/bin/lein
+chmod 777 lein
+./lein self-install
+
+git clone git://github.com/weavejester/compojure.git
+cd compojure
+../lein deps
+../lein jar
+
+
+Finally, back to cow-blog:
+Add the dependency jars to ClojureX's class path:
+echo "compojure/compojure.jar" >> .clojure
+echo "rhino1_7R2/js.jar" >> .clojure
+echo "blog/admin.clj
+> blog/config.clj
+> blog/db.clj
+> blog/layout.clj
+> blog/markdown.clj
+> blog/pages.clj
+> blog/rss.clj
+> blog/server.clj
+> blog/test.clj
+> blog/tokyocabinet.clj
+> blog/util.clj
+> " >> .clojure
+
+
+
+
