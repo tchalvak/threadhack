@@ -133,23 +133,29 @@ cd compojure
 ../lein jar
 
 
-Finally, back to cow-blog:
-Add the dependency jars to ClojureX's class path:
-echo "compojure/compojure.jar" >> .clojure
-echo "rhino1_7R2/js.jar" >> .clojure
-echo "blog/admin.clj
-> blog/config.clj
-> blog/db.clj
-> blog/layout.clj
-> blog/markdown.clj
-> blog/pages.clj
-> blog/rss.clj
-> blog/server.clj
-> blog/test.clj
-> blog/tokyocabinet.clj
-> blog/util.clj
-> " >> .clojure
+Finally, back to cow-blog/crow-blog:
+Add the dependency jars to ClojureX's class path via the .clojure file:
+echo "compojure/compojure.jar
+rhino1_7R2/js.jar
+/usr/local/lib/tokyocabinet.jar
+blog/
+" >> .clojure
+
+
+To check the class path from the repl:
+(System/getProperty "java.class.path")
+List the namespaces:
+(all-ns)
+
+Then run this in a REPL to start the blog server:
+(.start blog.server/blog-server)
+
+Visit http://localhost:8080 in a browser.
+
+A file posts.db will be created to store your data. Start reading server.clj to see what's what.
 
 
 
-
+Notes:
+http://justin.harmonize.fm/index.php/tag/tokyo-cabinet/
+Is about installing & using tokyo-cabinet, could be useful.
