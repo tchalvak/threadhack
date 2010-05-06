@@ -47,24 +47,45 @@
     h1{
         margin:.3em auto;
         text-align:center;
-        color:
+        color: black;
+        text-shadow: gray 2px 2px 2px;
     }
     h2{
         text-align:center;
-    }
-    
-    h1.caligraphy{
-        color:#003399;
+        text-shadow: white 1px 1px 1px;
     }
     
         
     #core #odesk-hire-me-widget{
-        margin:3em auto .3em;
+        margin:3em auto;
         text-align:center;
     }
     
     #availability{
         color:#33cc00;
+    }
+    .nav{
+    	width: 100%;
+    }
+    .nav ul{
+    	margin: 0 auto;
+    	width: 100%;
+    }
+    .nav ul li{
+    	float:left;
+    	margin: 0 auto;
+    	text-align: center;
+    	padding-left: 5em;
+		list-style:none;
+    }
+    .nav ul li a{
+    	color:white;
+    	font-size: 2em;
+    	text-decoration: none;
+    }
+    
+    .typewriter{
+    	font: "Courier New", monospace;
     }
     
     /*
