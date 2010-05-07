@@ -53,6 +53,7 @@
     h2{
         text-align:center;
         text-shadow: white 1px 1px 1px;
+        background-color:rgba(300, 300, 300, 0.7); /* css 3 only */
     }
     
         
@@ -82,10 +83,11 @@
     	color:white;
     	font-size: 2em;
     	text-decoration: none;
+    	text-shadow: black 2px 2px 2px;
     }
     
     .typewriter{
-    	font: "Courier New", monospace;
+    	font-family: 'Lucida Console', Monaco, monospace;
     }
     
     /*
@@ -109,5 +111,5 @@
 
     h1.airstream {font: 60px/68px 'AirstreamRegular', "Helvetica Neue", Arial, Helvetica, sans-serif;letter-spacing: 0;}
     h2.airstream {font: 30px/34px 'AirstreamRegular', "Helvetica Neue", Arial, Helvetica, sans-serif;letter-spacing: 0;}
-    h1.caligraphy {font: 60px/68px 'CalligraphyFLFRegular', "Helvetica Neue", Arial, Helvetica, sans-serif;letter-spacing: 0;}
-    h2.caligraphy {font: 30px/34px 'CalligraphyFLFRegular', "Helvetica Neue", Arial, Helvetica, sans-serif;letter-spacing: 0;}
+    h1.caligraphy {font: 60px/68px 'CalligraphyFLFRegular', 'Times New Roman', Times, serif;letter-spacing: 0;}
+    h2.caligraphy {font: 30px/34px 'CalligraphyFLFRegular', 'Times New Roman', Times, serif;letter-spacing: 0;}
