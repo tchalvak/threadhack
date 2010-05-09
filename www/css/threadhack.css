@@ -94,6 +94,9 @@
     .nav ul li.selected a{
     	border-bottom: 1px white solid;
     }
+    .nav ul li.selected a:hover{
+    	border-bottom: 2px white solid;
+    }
     
     .typewriter{
     	font-family: 'Lucida Console', Monaco, monospace;
