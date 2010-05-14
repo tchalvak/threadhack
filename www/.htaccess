@@ -1,3 +1,4 @@
+<IfModule mod_headers.c>
 # From http://www.evolt.org/ultimate_htaccess_examples
 
 # HEADERS and CACHING
@@ -8,7 +9,7 @@
 #   Header set Cache-Control "max-age=2592000"
 #</FilesMatch>
 # MONTH 2592000
-<FilesMatch "\.(flv|ico|swf|pdf)$">
+<FilesMatch "\.(flv|ico|swf|pdf|eot|ttf|woff)$">
    Header set Cache-Control "max-age=2592000"
 </FilesMatch>
 # WEEK 604800
@@ -35,3 +36,4 @@
 #<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
 #   Header unset Cache-Control
 #</FilesMatch>
+</IfModule>
