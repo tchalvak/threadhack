@@ -1,0 +1,16 @@
+adduser --in-group sudo <userName>
+
+// Then, log in to the username or su - <uSeRnAmE>
+
+
+
+
+
+sudo apt-get install apache2 php5 postgresql postgresql-contrib libpq-dev
+
+
+
+
+
+git config --global user.name "Roy"
+git config --global user.email tchalvakspam@gmail.com
