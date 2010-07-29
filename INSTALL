@@ -1,7 +1,9 @@
+// Note that since the site no longer will be using cow-blog, much of this is not necessary (apart from the clojure-required install steps).
+
+
 The following are All (yes, all) dependencies for getting cow-blog/crow-blog running:
 
 Instructions for getting clojure running:
-
 
 JAVA INSTALL INSTRUCTIONS
 
