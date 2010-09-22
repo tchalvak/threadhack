@@ -1,0 +1,38 @@
+(01:32:58 AM) Tchalvak: You have a "top 10 countdown" of things to change in a public server php.ini?
+(01:33:58 AM) Argumento Vazsqueez: register_globals, magic_quotes_gpc, timezone, charset, mem_limit (not sure what that is), script time limit (also not sure of exact name)
+(01:34:33 AM) Tchalvak: Max execution time.
+(01:34:42 AM) Argumento Vazsqueez: yeah that
+(01:34:47 AM) Argumento Vazsqueez: so that's 6
+(01:34:56 AM) Argumento Vazsqueez: oh yeah
+(01:34:58 AM) Argumento Vazsqueez: display_errors
+(01:35:01 AM) Tchalvak: Good enough.
+(01:35:09 AM) Argumento Vazsqueez: and the one for types of errors to display
+(01:35:13 AM) Argumento Vazsqueez: that's 8
+(01:35:18 AM) Argumento Vazsqueez: then compat42
+(01:35:18 AM) Tchalvak: error_reporting
+(01:35:52 AM) Argumento Vazsqueez: and include_path
+(01:35:54 AM) Argumento Vazsqueez: that's 10
+(01:36:27 AM) Argumento Vazsqueez: ah shit, log_errors
+(01:36:29 AM) Argumento Vazsqueez: that's 11
+(01:37:44 AM) Tchalvak: utf charset?
+(01:37:48 AM) Tchalvak: or isolkjlkjlkj
+(01:38:10 AM) Tchalvak: Apparently the default is set to be blank.
+(01:38:13 AM) Argumento Vazsqueez: post_max_size, register_long_arrays, upload_max_size
+(01:38:19 AM) Argumento Vazsqueez: I do utf-8
+(01:38:24 AM) Argumento Vazsqueez: also, new one I learned about
+(01:38:33 AM) Argumento Vazsqueez: ;mbstring.func_overload = 0
+(01:38:42 AM) Tchalvak: *nods*
+(01:38:47 AM) Tchalvak: Yeah, I remember.
+(01:38:53 AM) Argumento Vazsqueez: this can save you a lot of headache processing utf-8 form data
+(01:43:07 AM) Argumento Vazsqueez: so that's my slightly larger than list of 10
+(01:43:21 AM) Tchalvak: Good list, thanks.
+(01:43:26 AM) Tchalvak: most of the defaults are pretty good.
+(01:43:33 AM) Tchalvak: I think.
+(01:45:24 AM) Argumento Vazsqueez: what's your magic_quotes default?
+(01:45:37 AM) Tchalvak: Off.
+(01:45:46 AM) Argumento Vazsqueez: ah, ok, it was on for a long time
+(01:45:52 AM) Argumento Vazsqueez: timezone is usually blank
+(01:46:17 AM) Argumento Vazsqueez: and if you do date() and E_NOTICE you usually got spammed with timezone missing notices
+(01:52:05 AM) Tchalvak: They've upped the memory limits, too.
+(01:52:17 AM) Tchalvak: I don't remember it being as high as 128M before.
+(01:52:28 AM) Tchalvak: good call on the timezone stuff, though.
