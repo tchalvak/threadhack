@@ -2,15 +2,13 @@ adduser --ingroup sudo <userName>
 
 // Then, log in to the username or su - <uSeRnAmE>
 
-
-
-
+configure ssh and keygen:
+ssh-keygen -t dsa
+and
+(you can actually just use the line below) though the man allows for: ssh-copy-id [-i [identity_file]] [user@]machine
+ssh-copy-id username@server
 
 sudo apt-get install apache2 php5 postgresql postgresql-contrib libpq-dev
-
-
-
-
 
 git config --global user.name "Roy"
 git config --global user.email tchalvakspam@gmail.com
