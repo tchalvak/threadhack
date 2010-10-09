@@ -1,4 +1,4 @@
-adduser --in-group sudo <userName>
+adduser --ingroup sudo <userName>
 
 // Then, log in to the username or su - <uSeRnAmE>
 
