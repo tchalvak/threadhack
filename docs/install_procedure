@@ -12,3 +12,17 @@ sudo apt-get install apache2 php5 postgresql postgresql-contrib libpq-dev
 
 git config --global user.name "Roy"
 git config --global user.email tchalvakspam@gmail.com
+
+If you experience problems with the SSh connection timing out:
+"
+Here's what I did to potentially fix the ssh keepalive.
+
+Into /etc/ssh/sshd_config on the server:
+ClientAliveInterval 300
+ClientAliveCountMax 5
+
+and then sudo /sbin/service sshd reload
+or
+sudo /etc/init.d/ssh reload
+on debian
+"
