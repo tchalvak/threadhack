@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title> RoyRonalds.com</title>
+    <title>We-Dream-In-Code :: RoyRonalds.com</title>
     <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
     <!--[if lt IE 8]>
@@ -14,7 +14,6 @@
     <link rel="SHORTCUT ICON" href="threadhack_favicon.ico" />
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-    <!-- <script type="text/javascript" src="js/debug.js"></script> -->
     <!-- <script type="text/javascript" src='js/threadhack.js'></script> -->
         
         
@@ -31,7 +30,30 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    </script>
+	// Guarantee that there is a console to prevent errors while debugging.
+	if (typeof(console) != 'object') { console = { log: function() { } }; }
+
+
+
+    $().ready(function(){
+    	// First off, by default everything is shown.
+    	// Hide all the sections except the core.
+    	$('.core').not('#core-overview').hide();
+    	// Click handler for the nav anchors.
+    	$('#top .nav a').click(function() {
+    		// Determine the anchor name, with the hash.
+    		var anchor = $(this).attr('href');
+    		// Hide everything 
+    		$('.core').hide()
+    		// Show the id that corresponds.
+    		.end().find(anchor).show();
+    		// Return false (I guess)
+    		return false;
+    	});
+    });
+
+    </script>    
+    
   </head>
 
   <body id='main-body'>
@@ -46,10 +68,16 @@
     	<div class='nav'>
 		    <ul class='typewriter'>
 		      <li class='selected'>
-		      	<a href='/'>/</a>
+		      	<a href='#core-overview'>/</a>
 		      </li>
 		      <li>
-		      	<a href='/log.html'>/logs</a>
+		      	<a href='#core-logs'>/logs</a>
+		      </li>
+		      <li>
+		      	<a href='#core-portfolio'>/portfolio</a>
+		      </li>
+		      <li>
+		      	<a href='#core-contact'>/contact</a>
 		      </li>
 		     </ul>
 	     </div>
@@ -57,16 +85,216 @@
     </div>
   
   	<div class="header title"> 
+      <h1 class='airstream'>We Hack Dreams</h1>
       <h1 class='airstream'>Roy Ronalds</h1>
       <h2 class='caligraphy'>is <span id='availability'>available</span> for freelance work.</h2>
     </div>
 
 
-    <div id="core" class='section'>
+
+
+    <div id='core-wrapper' class='section long-page'>
+    <!-- Start of switchable core sections -->
+    
+    
+    <div id="core-overview" class='core'>
     
         <h2 class='caligraphy'>
-            <a href='mailto:roy.ronalds@gmail.com'>Contact me</a> about work or hire me through oDesk.com:
+            <a href='mailto:roy.ronalds@gmail.com'>Contact me</a> about work or 
+            <a href="http://www.odesk.com/users/Ninjawars-net-PHP-Programmer-Webdesigner_~~fd05bd113899b002">
+            hire me through oDesk.com.</a>
         </h2>
+            
+            
+        <div id='profile'>
+            <!-- <script>
+                $().ready(function(){
+                    $('.description p').not('#summary').toggle();
+                    $('#show-more')
+                        .click(function (){
+                            $('.description p').not('#summary').toggle()
+                                .end().find('#show-more').addClass('normal-text');
+                        });
+                });
+            </script> -->
+            
+            <div class='description' style='text-align:left;font-size:1.2em;'>
+                <h3 style='text-align:center'><a name='core-overview'>Overview</a></h3>
+                <p id='summary'>
+                <!-- <a id='show-more' href='#' title='Show the full overview'> -->
+                    <em>In a sentence, I code PHP web apps...</em>
+                <!-- </a> -->
+                </p>
+                <p>
+                I have coded and improved upon the browser based game <a href='http://www.ninjawars.net'>NinjaWars.net</a> as a personal project since 2003, have been professionally employed building web applications and working with a PHP/MySQL based CMS for the last 4 years, and have been designing websites in html/css long before that.
+                    </p>
+                    <p>
+                Usually I do my PHP programming in Object Oriented style, though I recently have been exploring the benefits of Functional Programming as a simpler and faster alternative, so I would welcome Functional Programming type work as well.  The coding style for your project is up to you, of course.
+                </p>
+                <p>
+                I wouldn't call myself a javascript guru, mainly because I prefer to do progressive enhancement, accomplishing all the basic functionality on the server side, in php, and then enhancing the user interface appropriately with javascript, but I am capable when it comes to Ajax-like functionality that just can't be accomplished elegantly via PHP alone.  I am fond of the great speed and simplicity that the jQuery framework provides, so I especially enjoy working on sites using jQuery.
+                </p>
+                <p>
+                So overall I enjoy the artistic side to creating good website design and the challenge of writing good PHP code as its foundation.
+                <p>
+            </div>
+        </div>
+            
+            
+    
+    </div>
+
+    <!-- Switchable core sections -->
+    <div class='core' id='core-portfolio'>
+    <h3><a class='core-anchor' name='core-portfolio'>Portfolio</a></h3>
+            <div class='projects'>
+                <h3 style='text-align:center'>Public Projects</h3>
+                <ol>
+                    <li>
+                <strong style='display:inline-block;background-color:brown;color:white;'>Flagship project:</strong>
+                    Webdesign, programming of new features & support of 
+                        <a href='http://www.ninjawars.net' target='_blank' class='external-link'>Ninjawars.net</a>
+                    </li>
+                    <li>Revision of <a href='http://contractor.vze.com'>contractor.vze.com</a> to turn it into an editable website using <a href='http://cmsmadesimple.org'>cmsmadesimple</a> as a backend.</li>
+                    <li>Work on <a href='http://charityeventcenter.org'>charityeventcenter.org</a> to expand on it's principles and turn it into a charity-focused cms using <a href='http://cmsmadesimple.org'>cmsmadesimple</a> as a backend.</li>
+                    <li>Work on various <a href='http://github.com/tchalvak/'>application projects on github</a></li>
+                    <li>This website, and turning it into a <a href='http://clojure.org'>Clojure language</a> based site.</li>
+                </ol>
+                
+            </div>
+    </div>
+    <div class='core' id='core-contact'>
+        <h3><a class='core-anchor' name='core-contact'>Contact Me</a></h3>
+        
+        
+        <div id="hcard-Roy-Ronalds" class="vcard" style='min-height:200px'>
+          <img style="float:left; margin-right:4px;max-width:200px;max-height:200px;" src="http://royronalds.com/images/roy.jpg" alt="Photo of Roy" class="photo"/>
+         <a class="url fn" href="http://royronalds.com">Roy Ronalds</a>
+         <a class="email" href="mailto:roy.ronalds@gmail.com">roy.ronalds@gmail.com</a>
+         <div class="adr">
+          <span class="region">New York</span>
+
+          <span class="country-name">USA</span>
+
+         </div>
+         <a class="url" href="aim:goim?screenname=Tchalvak">AIM</a> |
+         <a class="url" href="xmpp:Roy.ronalds@gmail.com">Jabber Chat</a> |
+         <a class="url" href="http://twitter.com/tchalvak">@tchalvak on twitter</a>
+        </div><!-- End of vcard -->
+
+    </div><!-- End of core-contact -->
+    
+    <div class='core' id='core-logs'>
+        <h3><a class='core-anchor' name='core-logs'>Logs</a></h3>
+
+	<div id='tumblr-widget'>
+		<script type="text/javascript" src="http://threadhack.tumblr.com/js"></script>
+	</div>
+
+            <div id='twitter-widget-div'>
+            
+            <!--
+            
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 30,
+  interval: 6000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#1c708a',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#1c0602',
+      links: '#0762eb'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('tchalvak').start();
+</script>
+
+    -->
+            
+  <!-- -->         
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'from:tchalvak #dev OR html OR clojure OR php OR webdesign OR #ui OR coding OR development OR linux OR ubuntu OR browser or css or javascript',
+  interval: 6000,
+  title: 'Recent Coding & Webdesign Tweets',
+  subject: '',
+  width: 'auto',
+  height: 'auto',
+  theme: {
+    shell: {
+      background: 'black',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'all'
+  }
+}).render().start();
+</script>    
+
+    <!-- -->
+
+            </div><!-- End of twitter widget div -->
+
+    
+    </div><!-- End of core-logs -->
+    
+    
+    
+    
+    <!-- End of switchable core sections -->
+    </div><!-- End of core wrapper -->
+
+    <div class='aside'>
+    
+        <div id='chat-contact'>
+            <iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqrjf9npqsvkbrebjdf5gu84463kuitp4ce6vcrvphritvj3q66rbvl2g3t5kmvsq7glo184jmr0548n6hrd0r84evcv5fl71efm503ja76ipt9ac8ru2dck9i2mtd9kj5bab8nbqv9da073h1p40cppcbn1f47vuk&amp;w=200&amp;h=60" frameborder="0" allowtransparency="true" width="200" height="60"></iframe>
+        </div>
+        <div id='face-image'>
+        <img style="float:left; margin-right:4px;max-width:200px;max-height:300px;" src="http://royronalds.com/images/roy.jpg" alt="Photo of Roy" class="photo"/>
+        </div>
+
+        <div style="text-align: left; padding: 5px 5px 5px 5px; font-size:12px; font-family: Tahoma;">
+            Roy Ronalds
+            <br/>roy.ronalds@gmail.com        
+            <br/>1 (585) 519 7658    
+            <br/>Based in Upstate New York.
+        </div>
+
+
         <div id='odesk-hire-me-widget' style='width:340px;height:230;background-color:white;margin:3em auto;'>
             <!-- START Hire Me on oDesk Widget -->
             
@@ -75,9 +303,6 @@
                 <div style="float:left; padding: 9px;">
                     <a href="http://www.odesk.com/users/Ninjawars-net-PHP-Programmer-Webdesigner_~~fd05bd113899b002"><img src="http://www.odesk.com/images/hire_me_button.gif" style="border:0px;"></a>
                 </div>
-                <div style="float: left; text-align: left; padding: 5px 5px 5px 5px; font-size:12px; font-family: Tahoma;">
-                    Roy Ronalds
-                    <br/>roy.ronalds@gmail.com        <br/>1 (585) 519 7658    </div>
             </div>
 <!-- END  Email Footer Widget -->
             
@@ -97,48 +322,7 @@
             
             
         </div>
-            
-            
-        <div id='profile'>
-            <div class='projects'>
-                <h3>Projects</h3>
-                <a href='http://www.ninjawars.net' target='_blank' class='external-link'>
-                    Ninjawar.net's Webdesigner & PHP Programmer
-                </a>
-            </div>
-            <div class='description'>
-                <h3>Overview</h3>
-                <p>
-                In a sentence, I code PHP web apps.  
-                </p>
-                <p>
-                I have coded and improved upon the browser based game NinjaWars.net ( <a href='http://www.ninjawars.net'>http://ninjawars.net</a> ) as a personal project since 2003, have been professionally employed building web applications and working with a PHP/MySQL based CMS for the last 4 years, and have been designing websites in html/css long before that.
-                    </p>
-                    <p>
-                Usually I do my PHP programming in Object Oriented style, though I recently have been exploring the benefits of Functional Programming as a simpler and faster alternative, so I would welcome Functional Programming type work as well.  The coding style for your project is up to you, of course.
-                </p>
-                <p>
-                I wouldn't call myself a javascript guru, mainly because I prefer to do progressive enhancement, accomplishing all the basic functionality on the server side, in php, and then enhancing the user interface appropriately with javascript, but I am capable when it comes to Ajax-like functionality that just can't be accomplished elegantly via PHP alone.  I am fond of the great speed and simplicity that the jQuery framework provides, so I especially enjoy working on sites using jQuery.
-                </p>
-                <p>
-                So overall I enjoy the artistic side to creating good website design and the challenge of writing good PHP code as its foundation.
-                <p>
-            </div>
-        </div>
-            
-            
-    
-    </div>
 
-    <div class='aside'>
-    
-        <div id='chat-contact'>
-            <iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqrjf9npqsvkbrebjdf5gu84463kuitp4ce6vcrvphritvj3q66rbvl2g3t5kmvsq7glo184jmr0548n6hrd0r84evcv5fl71efm503ja76ipt9ac8ru2dck9i2mtd9kj5bab8nbqv9da073h1p40cppcbn1f47vuk&amp;w=200&amp;h=60" frameborder="0" allowtransparency="true" width="200" height="60"></iframe>
-        </div>
-        
-        <div id='contact-location'>
-            Based in Upstate New York.
-        </div>
         
     </div>
 
@@ -212,7 +396,7 @@ new TWTR.Widget({
     </div>
     
     
-  </div><!-- End of container -->    
+  </div><!-- End of main container -->    
   </body>
 </html>
 
