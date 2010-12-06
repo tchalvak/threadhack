@@ -61,13 +61,29 @@
     #core-wrapper .description p{
         padding-top:.5em;
     }
-    #core-wrapper .projects{
+    #core-wrapper .projects, #core-wrapper .vcard{
         background-color: rgba(255, 255, 255, 0.8);
     }
    
     #core-wrapper #odesk-hire-me-widget{
         margin:3em auto;
         text-align:center;
+    }
+    
+    #core-wrapper h3 a{
+    	font-weight:bolder;
+    	font-style:italic;
+    	padding: .3em .3em;
+    	background-color: #566e9b;
+    	background-color: rgba(86, 110, 155, 0.5);
+    	color: white;
+    	text-shadow: 2px 2px 2px rgb(11, 11, 11);
+    	text-decoration:none;
+    	-moz-border-radius: 15px;
+		border-radius: 15px;
+    }
+    #core-wrapper h3{
+    	text-align:center;
     }
     
     .core-anchor{

@@ -38,7 +38,9 @@
     $().ready(function(){
     	// First off, by default everything is shown.
     	// Hide all the sections except the core.
-    	$('.core').not('#core-overview').hide();
+    	var currentHash = self.document.location.hash;
+    	var current = currentHash? currentHash : '#core-overview';
+    	$('.core').not(current).hide();
     	// Click handler for the nav anchors.
     	$('#top .nav a').click(function() {
     		// Determine the anchor name, with the hash.
@@ -47,8 +49,6 @@
     		$('.core').hide()
     		// Show the id that corresponds.
     		.end().find(anchor).show();
-    		// Return false (I guess)
-    		return false;
     	});
     });
 
@@ -59,7 +59,9 @@
   <body id='main-body'>
   <div id='main-container'>
     <div id='profession-banner-container' class='section' style='float:left'>
-      <a href='/' title='Roy Ronalds, Coder/Designer'><img id='profession-banner' src='images/profession_banner.png'></a>
+      <a href='/' title='Roy Ronalds, Coder/Designer'>
+      	<img id='profession-banner' src='images/profession_banner.png'>
+      </a>
     </div>
   
 
@@ -235,7 +237,7 @@ new TWTR.Widget({
 new TWTR.Widget({
   version: 2,
   type: 'search',
-  search: 'from:tchalvak #dev OR html OR clojure OR php OR webdesign OR #ui OR coding OR development OR linux OR ubuntu OR browser or css or javascript',
+  search: 'from:tchalvak #dev OR html OR clojure OR php OR webdesign OR #ui OR coding OR development OR linux OR ubuntu OR browser OR css OR javascript',
   interval: 6000,
   title: 'Recent Coding & Webdesign Tweets',
   subject: '',
