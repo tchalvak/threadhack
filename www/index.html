@@ -86,10 +86,25 @@
 	     
     </div>
   
+  <style type='text/css'>
+  .header #available{
+  	display:none;
+  }
+  .header #unavailable{
+  	display:inline !important;
+  	color:red;
+  }
+  </style>
+  
   	<div class="header title"> 
       <h1 class='airstream'>We Hack Dreams</h1>
       <h1 class='airstream'>Roy Ronalds</h1>
-      <h2 class='caligraphy'>is <span id='availability'>available</span> for freelance work.</h2>
+      <h2 class='caligraphy'>
+      	is 
+      	<span id='availability'>
+      		<span id='unavailable' style='display:none'>currently unavailable</span>
+      		<span id='available'>available</span>
+      	</span> for freelance work.</h2>
     </div>
 
 
