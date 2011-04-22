@@ -23,6 +23,8 @@ ServerName bitlucid.com
     #    php_value session.cookie_domain "bitlucid.com"
  
 #    <FilesMatch "\.(php)$">
+#        php_value session.cookie_domain "royronalds.com"
+#        php_value expose_php "Off"
 #        php_value auto_prepend_file "/home/kzqai/sites/threadhack/lib/lib/base.inc.php"
 #    </FilesMatch>
 
