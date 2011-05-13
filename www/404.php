@@ -8,7 +8,6 @@
   </head>
   <body id="page-404">
   	<h1>Page Not Found</h1>
-  	<img src='/images/threadhackicon.png' alt='' style='width:100px;height:100px'>
     <p>
       Sorry, that page isn't there, feel free to search the site for a similar one, though.
     </p>
@@ -19,6 +18,7 @@
   <input maxlength="256" size="40" name="q" value=""> 
   <input type="submit" value="search the site" name="btnG" style="font-size:75%;"> 
 </form>
+  	<img src='/images/threadhackicon.png' alt='' style='width:100px;height:100px'>
     <div>Return to <a href="/">RoyRonalds.com</a></div>
     <div id='support-email'>or email <a href="mailto:roy.ronalds@gmail.com">roy.ronalds@gmail.com</a></div>
   </body>

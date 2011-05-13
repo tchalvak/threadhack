@@ -144,12 +144,74 @@
             </script> -->
             
             <div class='description' style='text-align:left;font-size:1.2em;'>
-                <h3 style='text-align:center'><a name='core-overview'>Overview</a></h3>
+                <h3 style='text-align:center'><a name='core-overview'>This is what I do</a></h3>
+                <style>
+                	#skills{
+                		width:100%;
+                	}
+                	.skill-text{
+                		line-height:2em;
+                		float:left;
+                		width: 30%;
+                		text-align:right;
+                		padding:0 1em;
+                		font-size:smaller;
+                	}
+                	.skill-bar{
+                		line-height:2em;
+                		float:left;
+                		background-color:black;
+                		color:white;
+                		padding:0 1em;
+                		text-transform:uppercase;
+                	}
+                	.skill-bar.first{
+                		width:60%;
+                		background-color:rgb(10, 10, 10);
+                	}
+                	.skill-bar.second{
+                		width:50%;
+                		background-color:rgb(20, 20, 20);
+                	}
+                	.skill-bar.middle{
+                		width:40%;
+                		background-color:rgb(40, 40, 40);
+                	}
+                	.skill-bar.next-to-last{
+                		width:30%;
+                		background-color:rgb(70, 70, 70);
+                	}
+                	.skill-bar.last{
+                		width:20%;
+                		background-color:rgb(100, 100, 100);
+                	}
+                	#skills br{
+                		clear:both;
+                	}
+                </style>
+                <div id='skills'>
+                	<div class='skill-text'>Coding</div><div class='first skill-bar'>PHP
+                	</div>
+                	<br>
+                	<div class='skill-text'>Layout</div><div class='second skill-bar'>HTML/HTML5/CSS
+                	</div>
+                	<br>
+                	<div class='skill-text'>Server Administration</div><div class='middle skill-bar'>APACHE/DEBIAN
+                	</div>
+                	<br>
+                	<div class='skill-text'>Frontend interaction</div><div class='next-to-last skill-bar'>JQUERY
+                	</div>
+                	<br>
+                	<div class='skill-text'>Image Design</div><div class='last skill-bar'>GIMP/PHOTOSHOP
+                	</div>
+                	<br>
+                </div>
                 <p id='summary'>
                 <!-- <a id='show-more' href='#' title='Show the full overview'> -->
                     <em>In a sentence, I code PHP web apps...</em>
                 <!-- </a> -->
                 </p>
+
                 <p>
                 I have coded and improved upon the browser based game <a href='http://www.ninjawars.net'>NinjaWars.net</a> as a personal project since 2003, have been professionally employed building web applications and working with a PHP/MySQL based CMS for the last 4 years, and have been designing websites in html/css long before that.
                     </p>
@@ -432,7 +494,7 @@ new TWTR.Widget({
     </ul>
     -->
     
-    <div id='copyright'><a href='http://creativecommons.org/licenses/by-sa/2.5/' style='color:white;'><img src='/images/copyleft-white-50px.png' alt='' style='width:10px;height:10px'> Copyleft</a> 2010 Roy Ronalds</div>
+    <div id='copyright'><a rel='license' href='http://creativecommons.org/licenses/by-sa/3.0/' style='color:white;'><img src='/images/copyleft-white-50px.png' alt='' style='width:10px;height:10px'> Copyleft <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"></a> since 2010 by Roy Ronalds</div>
         <div id='threadhack-repository-link'><a href="http://github.com/tchalvak/threadhack">
             Source code for this site on GitHub</a>
         </div>
