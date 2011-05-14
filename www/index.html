@@ -23,7 +23,6 @@
 
   <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="css/threadhack.css">
-  <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
   <!-- <link rel='stylesheet' href='css/debugger.css' type='text/css' media='screen'> -->
 
   <!-- All JavaScript at the bottom, except for Modernizr and Respond.
@@ -43,7 +42,7 @@
     </section>
 
     <section id="top">
-    	<nav class='nav'>
+    	<nav>
 		    <ul class='typewriter'>
 		      <li class='selected'>
 		      	<a href='#core-overview'>/</a>
@@ -432,12 +431,12 @@ new TWTR.Widget({
 	// Specific-to-this-page functionality.
     $().ready(function(){
     	// First off, by default everything is shown.
-    	// Hide all the sections except the core.
+    	// Hide all the sections except the current one.
     	var currentHash = self.document.location.hash;
     	var current = currentHash? currentHash : '#core-overview';
     	$('.core').not(current).hide();
     	// Click handler for the nav anchors.
-    	$('#top .nav a').click(function() {
+    	$('#top nav a').click(function() {
     		// Determine the anchor name, with the hash.
     		var anchor = $(this).attr('href');
     		// Hide everything 
