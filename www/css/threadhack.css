@@ -257,9 +257,9 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
     }
     
     aside{
-        width:8%;
+        width:7%;
         position:fixed;
-        right:7%;
+        right:9%;
         top:10%;
     }
     header{
