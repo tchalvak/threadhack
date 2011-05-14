@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
     
     aside{
         width:8%;
-        position:absolute;
+        position:fixed;
         right:7%;
         top:10%;
     }
