@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<meta charset="utf-8">
     <title>
       404 Error Page Not Found
     </title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+	  body { text-align: center;}
+	  h1 { font-size: 50px; text-align: center }
+	  body { font: 20px Constantia, 'Hoefler Text',  "Adobe Caslon Pro", Baskerville, Georgia, Times, serif; color: #666; text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.5); }
+	  ::-moz-selection{ background:#FF5E99; color:#fff; }
+	  ::selection { background:#FF5E99; color:#fff; } 
+	  
+	  a { color: rgb(36, 109, 56); text-decoration:none; }
+	  a:hover { color: rgb(96, 73, 141) ; text-shadow: 2px 2px 2px rgba(36, 109, 56, 0.5); }
+    </style>
   </head>
   <body id="page-404">
   	<h1>Page Not Found</h1>

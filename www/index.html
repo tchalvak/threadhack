@@ -1,73 +1,49 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Dream In Code :: RoyRonalds.com</title>
-    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
-    <!--[if lt IE 8]>
-     <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
-    <![endif]-->
-    <link rel="stylesheet" href="css/threadhack.css" type="text/css" media="screen, projection">
-    <!-- <link rel='stylesheet' href='css/debugger.css' type='text/css' media='screen'> -->
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
 
-    <link rel="SHORTCUT ICON" href="threadhack_favicon.ico" />
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
-    <!-- <script type="text/javascript" src='js/threadhack.js'></script> -->
-        
-        
-    <!-- Asynchronous google analytics script, should be at the end of the head -->
-    <script type="text/javascript">
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-15570622-1']);
-      _gaq.push(['_trackPageview']);
+  <title>Dream In Code :: RoyRonalds.com</title>
+  <meta name="description" content="Dream in Code">
+  <meta name="author" content="Roy Ronalds">
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	// Guarantee that there is a console to prevent errors while debugging.
-	if (typeof(console) != 'object') { console = { log: function() { } }; }
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="SHORTCUT ICON" href="threadhack_favicon.ico" />
 
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="css/threadhack.css">
+  <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
+  <!-- <link rel='stylesheet' href='css/debugger.css' type='text/css' media='screen'> -->
 
+  <!-- All JavaScript at the bottom, except for Modernizr and Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries -->
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+  <script src='js/libs/respond.min.js'></script>
+</head>
 
-    $().ready(function(){
-    	// First off, by default everything is shown.
-    	// Hide all the sections except the core.
-    	var currentHash = self.document.location.hash;
-    	var current = currentHash? currentHash : '#core-overview';
-    	$('.core').not(current).hide();
-    	// Click handler for the nav anchors.
-    	$('#top .nav a').click(function() {
-    		// Determine the anchor name, with the hash.
-    		var anchor = $(this).attr('href');
-    		// Hide everything 
-    		$('.core').hide()
-    		// Show the id that corresponds.
-    		.end().find(anchor).show();
-    	});
-    });
+<body>
 
-    </script>    
-    
-  </head>
-
-  <body id='main-body'>
-  <div id='main-container'>
-    <div id='profession-banner-container' class='section' style='float:left'>
+  <div id="container">
+    <header>
+    <section id='profession-banner-container' style='float:left'>
       <a href='/' title='Roy Ronalds, Coder/Designer'>
       	<img id='profession-banner' src='images/profession_banner.png'>
       </a>
-    </div>
-  
+    </section>
 
-
-    <div id="top" class="section">
-    	<div class='nav'>
+    <section id="top">
+    	<nav class='nav'>
 		    <ul class='typewriter'>
 		      <li class='selected'>
 		      	<a href='#core-overview'>/</a>
@@ -82,15 +58,14 @@
 		      	<a href='#core-contact'>/contact</a>
 		      </li>
 		     </ul>
-	     </div>
+	     </nav>
 	     
-    </div>
-  
-  <style type='text/css'>
-  .header #available{
+    </section>
+    <style type='text/css'>
+  header #available{
   	display:none;
   }
-  .header #unavailable{
+  header #unavailable{
   	display:inline !important;
   	color:red;
   }
@@ -104,7 +79,8 @@
   }
   </style>
   
-  	<div class="header title"> 
+  		<!-- Main non-nav, non-logo header stuff -->
+  
       <h1 class='airstream'>Dream In Code</h1>
       <h1 class='airstream'>Roy Ronalds</h1>
       <h2 class='caligraphy'>
@@ -113,11 +89,9 @@
       		<span id='unavailable' style='display:none'>currently unavailable</span>
       		<span id='available'>available</span>
       	</span> for freelance work.</h2>
-    </div>
-
-
-
-
+      	
+      	
+    </header>
     <div id='core-wrapper' class='section long-page'>
     <!-- Start of switchable core sections -->
     
@@ -244,7 +218,7 @@
                     </li>
                     <li>Coding & refactoring of the <a href='http://shermanbrothers.com'>shermanbrothers.com</a> website infastructure</li>
                     
-                    <li>Revision of <a href='http://contractor.vze.com'>contractor.vze.com</a> to turn it into an editable website using <a href='http://cmsmadesimple.org'>cmsmadesimple</a> as a backend.</li>
+                    <li>Revision of <a href='http://contractor.vze.com'>contractor.vze.com</a> to turn it into an editable website using <a href='http://cmsmadesimple.org'>cmsmadesimple</a> as a backend, and redesigning something like <a href='//tersh.royronalds.com'>tersh.royronalds.com</a></li>
                     <li>Work on various <a href='http://github.com/tchalvak/'>application projects on github</a></li>
                     <li>This website, and turning it into a <a href='http://clojure.org'>Clojure language</a> based site.</li>
                 </ol>
@@ -385,7 +359,7 @@ new TWTR.Widget({
     <!-- End of switchable core sections -->
     </div><!-- End of core wrapper -->
 
-    <div class='aside'>
+    <aside>
     
         <div id='chat-contact'>
             <iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqrjf9npqsvkbrebjdf5gu84463kuitp4ce6vcrvphritvj3q66rbvl2g3t5kmvsq7glo184jmr0548n6hrd0r84evcv5fl71efm503ja76ipt9ac8ru2dck9i2mtd9kj5bab8nbqv9da073h1p40cppcbn1f47vuk&amp;w=200&amp;h=60" frameborder="0" allowtransparency="true" width="200" height="60"></iframe>
@@ -429,80 +403,60 @@ new TWTR.Widget({
             
 
         
-    </div>
-
-
-    <!--
-    <div class='aside'>
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'search',
-  search: 'from:tchalvak #dev',
-  interval: 6000,
-  title: 'Coding Updates',
-  subject: '',
-  width: 'auto',
-  height: 300,
-  theme: {
-    shell: {
-      background: '#115473',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#ffffff',
-      color: '#444444',
-      links: '#1985b5'
-    }
-  },
-  features: {
-    scrollbar: true,
-    loop: false,
-    live: false,
-    hashtags: true,
-    timestamp: true,
-    avatars: true,
-    toptweets: true,
-    behavior: 'all'
-  }
-}).render().start();
-</script>    
-        
-    </div>
-    -->
+    </aside>
     
-
-
-    <div class='footer'>
     
-    <!--
-
-      <div class='nav'>
-      <ul>
-       <li></li>
-      </ul>
-      </div>
-      
-      <div>
-      	<a href='http://github.com/tchalvak'>github.com/tchalvak</a>
-      </div>
-    <ul id="repos"> 
-      <li><h3>repositories</h3></li>
-      <li id='latest-commit-title'>NW latest commit:</li>
-      <li id='latest-commit'></li>
-    </ul>
-    -->
-    
-    <div id='copyright'><a rel='license' href='http://creativecommons.org/licenses/by-sa/3.0/' style='color:white;'><img src='/images/copyleft-white-50px.png' alt='' style='width:10px;height:10px'> Copyleft <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"></a> since 2010 by Roy Ronalds</div>
-        <div id='threadhack-repository-link'><a href="http://github.com/tchalvak/threadhack">
+    <footer style='text-align:center'>
+      <div id='copyright'><a rel='license' href='http://creativecommons.org/licenses/by-sa/3.0/' style='color:white;'><img src='/images/copyleft-white-50px.png' alt='' style='width:10px;height:10px'> Copyleft <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"></a> since 2010 by Roy Ronalds</div>
+          <div id='threadhack-repository-link'><a href="http://github.com/tchalvak/threadhack">
             Source code for this site on GitHub</a>
-        </div>
-	<div id='tagline'>Hacking dreams, or dreaming hacks</div>
-    </div>
-    
-    
-  </div><!-- End of main container -->    
-  </body>
-</html>
+          </div>
+	  <div id='tagline'>Hacking dreams, or dreaming hacks</div>
+    </footer>
+  </div> <!--! end of #container -->
 
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.6.min.js'>\x3C/script>")</script>
+
+
+  <!-- main scripts-->
+  <script src="js/threadhack.js"></script>
+  <!-- end scripts-->
+  
+  <script>
+
+	// Specific-to-this-page functionality.
+    $().ready(function(){
+    	// First off, by default everything is shown.
+    	// Hide all the sections except the core.
+    	var currentHash = self.document.location.hash;
+    	var current = currentHash? currentHash : '#core-overview';
+    	$('.core').not(current).hide();
+    	// Click handler for the nav anchors.
+    	$('#top .nav a').click(function() {
+    		// Determine the anchor name, with the hash.
+    		var anchor = $(this).attr('href');
+    		// Hide everything 
+    		$('.core').hide()
+    		// Show the id that corresponds.
+    		.end().find(anchor).show();
+    	});
+    });
+  
+  </script>
+
+	
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    var _gaq=[["_setAccount","UA-15570622-1"],["_trackPageview"],["_trackPageLoadTime"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+</body>
+</html>
