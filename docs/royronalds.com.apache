@@ -2,10 +2,6 @@
         ServerName royronalds.com
         ServerAlias www.royronalds.com
 
-	#Redirect from www site to royronalds.com
-	RewriteEngine On
-	RewriteCond %{HTTP_HOST} ^www.royronalds.com [NC]
-	RewriteRule ^(.*)$ http://royronalds.com$1 [L,R=301]
 
         DocumentRoot /home/kzqai/sites/threadhack/www/
         RewriteRule ^([^/]+)/favicon.ico $1/threadhack_favicon.ico [T=image/x-icon]
