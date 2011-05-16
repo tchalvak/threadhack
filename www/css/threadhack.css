@@ -164,8 +164,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 
 /* Indentation instead of line shifts for sibling paragraphs. */
-/*
-   p + p { text-indent:2em; } */
+	p { margin-top: .7em; }
+   p + p { text-indent:2em; } 
    form p + p  { text-indent: 0; } /* Don't want this in forms. */
    
     body{
