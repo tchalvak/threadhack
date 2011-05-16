@@ -21,8 +21,20 @@ Into /etc/ssh/sshd_config on the server:
 ClientAliveInterval 300
 ClientAliveCountMax 5
 
+Also prevent root username login in the setting there.
+
 and then sudo /sbin/service sshd reload
 or
 sudo /etc/init.d/ssh reload
 on debian
 "
+
+cd /etc/apache2/mods-enabled/
+sudo ln -s ../mods-available/expires.load expires.load
+sudo ln -s ../mods-available/filter.load ./filter.load
+sudo ln -s ../mods-available/headers.load ./headers.load
+
+
+
+Change /etc/apache2/conf.d/security to: ServerTokens Major
+// To show only the major apache version.
