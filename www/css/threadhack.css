@@ -415,15 +415,15 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
  * The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
  */
 
-@media only screen and (min-width: 480px) {
+/*@media only screen and (min-width: 480px) {*/
   /* Style adjustments for viewports 480px and over go here */
 
-}/*/mediaquery*/
+/*}/*//*mediaquery*/
 
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {*/
   /* Style adjustments for viewports 768px and over go here */
 
-}/*/mediaquery*/
+/*}/*//*mediaquery*/
 
 
 
