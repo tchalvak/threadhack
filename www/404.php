@@ -24,12 +24,12 @@
 <form action="http://www.google.com/search" name="searchbox" method="get" style="margin-left: 2em;"> 
   <input type="hidden" name="hl" value="en"> 
   <input type="hidden" name="ie" value="ISO-8859-1"> 
-  <input type="hidden" name="sitesearch" value="royronalds.com"> 
+  <input type="hidden" name="sitesearch" value="bitlucid.com"> 
   <input maxlength="256" size="40" name="q" value=""> 
   <input type="submit" value="search the site" name="btnG" style="font-size:75%;"> 
 </form>
   	<img src='/images/threadhackicon.png' alt='' style='width:100px;height:100px'>
-    <div>Return to <a href="/">RoyRonalds.com</a></div>
+    <div>Return to <a href="/">BitLucid.com</a></div>
     <div id='support-email'>or email <a href="mailto:roy.ronalds@gmail.com">roy.ronalds@gmail.com</a></div>
   </body>
 </html>

@@ -1,11 +1,26 @@
+ServerName bitlucid.com
+# ServerName bitlucid.com has to be in httpd.conf to set the default server name as well.
 <VirtualHost *:80>
-        ServerName royronalds.com
-        ServerAlias www.royronalds.com
+	ServerName bitlucid.com
+	ServerAlias www.bitlucid.com
+	ServerAlias www.royronalds.com
+	ServerAlias royronalds.com
+	ServerAlias *.bitlucid.com
 
+	RewriteEngine On
+
+	RewriteCond %{HTTP_HOST} ^www\.royronalds\.com [NC]
+	RewriteRule ^(.*)$ http://bitlucid.com$1 [L,R=301]
+
+	RewriteCond %{HTTP_HOST} ^www\.bitlucid\.com [NC]
+	RewriteRule ^(.*)$ http://bitlucid.com$1 [L,R=301]
+
+	RewriteCond %{HTTP_HOST} ^royronalds\.com [NC]
+	RewriteRule ^(.*)$ http://bitlucid.com$1 [L,R=301]
 
         DocumentRoot /home/kzqai/sites/threadhack/www/
         RewriteRule ^([^/]+)/favicon.ico $1/threadhack_favicon.ico [T=image/x-icon]
-    #    php_value session.cookie_domain "royronalds.com"
+    #    php_value session.cookie_domain "bitlucid.com"
  
 #    <FilesMatch "\.(php)$">
 #        php_value auto_prepend_file "/home/kzqai/sites/threadhack/lib/lib/base.inc.php"
