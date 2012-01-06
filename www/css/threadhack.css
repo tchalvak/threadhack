@@ -278,6 +278,20 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
         text-shadow: white 1px 1px 1px;
         background-color:rgba(300, 300, 300, 0.7); /* css 3 only */
     }
+	header #available{
+		display:none !important;
+	}
+	header #unavailable{
+		color:red;
+	}
+	.tumblr_title, .tumblr_title a{
+		font-size: 2em;
+		font-weight: bold;
+		text-decoration:overline;
+	}
+	h1{
+		text-shadow:1px 1px 1px gray;
+	}
     
     #availability{
         color:#33cc00;
