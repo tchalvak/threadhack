@@ -298,6 +298,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
     }
     nav{
     	width: 100%;
+    	min-height:1em;
     }
     nav a, nav a:hover, nav a:visited{
     	color:white;
