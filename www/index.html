@@ -42,8 +42,8 @@ Yb,  88      `8b         I8         88  ,dP                                     
 
   <!-- All JavaScript at the bottom, except for Modernizr and Respond.
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries -->
-  <script src="js/libs/modernizr-1.7.min.js"></script>
-  <script src='js/libs/respond.min.js'></script>
+  <script type='text/javascript' src="js/libs/modernizr-1.7.min.js"></script>
+  <script type='text/javascript' src='js/libs/respond.min.js'></script>
 </head>
 
 <body>
@@ -69,7 +69,7 @@ Yb,  88      `8b         I8         88  ,dP                                     
 		      	<a href='#core-portfolio'>/portfolio</a>
 		      </li>
 		      <li>
-		      	<a rel='author me' href='#core-contact'>/contact</a><!-- Author to encourage google profile attachment -->
+		      	<a href='#core-contact'>/contact</a>
 		      </li>
 		     </ul>
 	     </nav>
@@ -96,7 +96,7 @@ Yb,  88      `8b         I8         88  ,dP                                     
     <div id="core-overview" class='core'>
     
         <h2 class='caligraphy'>
-            <a rel='author me' href='mailto:roy.ronalds@gmail.com'>Contact me</a> about work or 
+            <a rel='author nofollow me' href='mailto:roy.ronalds@gmail.com'>Contact me</a> about work or 
             <a rel='me' href="http://www.odesk.com/users/Ninjawars-net-PHP-Programmer-Webdesigner_~~fd05bd113899b002">
             hire me through oDesk.com.</a>
         </h2>
@@ -215,7 +215,7 @@ Yb,  88      `8b         I8         88  ,dP                                     
                     </li>
                     <li>Coding & refactoring of the <a href='http://shermanbrothers.com'>shermanbrothers.com</a> website infastructure</li>
                     
-                    <li>Revision of <a href='http://contractor.vze.com'>contractor.vze.com</a> to turn it into an editable website using <a href='http://cmsmadesimple.org'>cmsmadesimple</a> as a backend, and redesigning something like <a href='//tersh.royronalds.com'>tersh.royronalds.com</a></li>
+                    <li>Revision of <a href='http://contractor.vze.com'>contractor.vze.com</a> to turn it into an editable website using <a href='http://cmsmadesimple.org'>cmsmadesimple</a> as a backend, and redesigning something like <a href='http://tersh.royronalds.com'>tersh.royronalds.com</a></li>
                     <li>Work on various <a href='http://github.com/tchalvak/'>application projects on github</a></li>
                     <li>This website, and turning it into a <a href='http://clojure.org'>Clojure language</a> based site.</li>
                 </ol>
@@ -228,7 +228,7 @@ Yb,  88      `8b         I8         88  ,dP                                     
                     <li>Website security: Cross-Site-Scripting security audit & site hardening project for an academy's website</li>
                     <li>Created the infrastructure and implemented the design of Steve Passin & Associates website (not yet online)</li>
                     <li>Some work on <a href='http://charityeventcenter.org'>charityeventcenter.org</a> to expand on it's principles and turn it into a charity-focused cms using <a href='http://cmsmadesimple.org'>cmsmadesimple</a> as a backend.</li>
-                    <li>Other sites that I have coded/designed for: <a href='http://smartypaws.com'>smartypaws.com</a>, <a href='http://nevadadbe.com'>nevadadbe.com</a>, <a href='http://labyrinthsociety.org'>labyrinthsociety.org</a>, <a href='http://vvh2o.com'>Virgin Valley Water District</a>, some work on an older version of <a href='//usn.edu'>usn.edu</a></li>
+                    <li>Other sites that I have coded/designed for: <a href='http://smartypaws.com'>smartypaws.com</a>, <a href='http://nevadadbe.com'>nevadadbe.com</a>, <a href='http://labyrinthsociety.org'>labyrinthsociety.org</a>, <a href='http://vvh2o.com'>Virgin Valley Water District</a>, some work on an older version of <a href='http://usn.edu'>usn.edu</a></li>
                 </ol>
             </div>
     </div>
@@ -238,18 +238,18 @@ Yb,  88      `8b         I8         88  ,dP                                     
         
         <div id="hcard-Roy-Ronalds" class="vcard" style='min-height:200px'>
           <img style="float:left; margin-right:4px;max-width:100%;max-height:200px;" src="http://royronalds.com/images/roy.jpg" alt="Photo of Roy" class="photo"/>
-         <a class="url fn" href="http://royronalds.com">Roy Ronalds</a><br>
-         <a class="email" rel='author me' href="mailto:roy.ronalds@gmail.com">roy.ronalds@gmail.com</a>
+         <a class="url fn" href="http://bitlucid.com">Roy Ronalds</a><br>
+         <a class="email" rel='me nofollow' href="mailto:roy.ronalds@gmail.com">roy.ronalds@gmail.com</a>
          <div class="adr">
           <span class="region">New York</span><br>
 
           <span class="country-name">USA</span>
 
          </div>
-         <a class="url" rel='author me' href="aim:goim?screenname=Tchalvak">AIM</a> |
-         <a class="url" rel='author me' href="xmpp:Roy.ronalds@gmail.com">Gtalk Chat</a> |
+         <a class="url" rel='nofollow' href="aim:goim?screenname=Tchalvak">AIM</a> |
+         <a class="url" rel='nofollow' href="xmpp:Roy.ronalds@gmail.com">Gtalk Chat</a> |
          <a class="url" href="http://twitter.com/tchalvak">@tchalvak on twitter</a>
-         <a href="https://plus.google.com/104798509386141979631/posts" rel="external nofollow me">On Google Plus</a>
+         <a href="https://plus.google.com/104798509386141979631/" rel="author external me">On Google Plus</a>
         </div><!-- End of vcard -->
 
     </div><!-- End of core-contact -->
@@ -430,12 +430,12 @@ new TWTR.Widget({
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, without the protocol relative URL since some bots didn't seem to get it; fall back to local if necessary -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
+  <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write("<script type='text/javascript' src='js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
 
 
   <!-- main scripts-->
-  <script src="js/threadhack.js"></script>
+  <script type='text/javascript' src="js/threadhack.js"></script>
   <!-- end scripts-->
   
   <script>
