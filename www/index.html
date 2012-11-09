@@ -58,11 +58,11 @@ Yb,  88      `8b         I8         88  ,dP                                     
 			
 			<article id='aboutus'>
 				<header id='intro'>
-					<h1>BitLucid, Inc. :: Web & Technology Consultants</h1>
+					<h1 class='airstream'>BitLucid, Inc. &#x25b7; <strong class='typewriter'>Web &amp; Technology Consultants</strong></h1>
 					
-					  <h1 class='airstream'>Bit Lucid, Inc.</h1>
 					  <h2 class='caligraphy'>
-					  	are 
+					  <strong class='airstream'>Bit Lucid</strong>
+					  	is 
 					  	<span id='availability'>
 					  		<span id='unavailable'>currently unavailable</span>
 					  		<span id='available'>available</span>
@@ -71,45 +71,55 @@ Yb,  88      `8b         I8         88  ,dP                                     
 				</header>
 					  	
 		<section class='description' style='text-align:left;font-size:1.2em;'>
-                <h3 style='text-align:center'><a name='core-overview'>This is what we do</a></h3>
+                <h3 style='text-align:center'>This is what we do</h3>
 <style>
 #skills{
-	width:100%;
+	box-sizing:border-box;
 }
 .skill-text{
+	box-sizing:border-box;
 	line-height:2em;
-	float:left;
+	display:inline-block;
 	width: 30%;
 	text-align:right;
 	padding:0 1em;
 	font-size:smaller;
 }
 .skill-bar{
+	box-sizing:border-box;
+	display:inline-block;
 	line-height:2em;
-	float:left;
 	background-color:black;
 	color:white;
 	padding:0 1em;
 	text-transform:uppercase;
 }
+.skill-bar:hover{
+	overflow:visible;
+	text-shadow:3px 1px 3px #222;
+}
 .skill-bar.first{
-	width:60%;
+	width:70%;
 	background-color:rgb(10, 10, 10);
 }
 .skill-bar.second{
 	width:50%;
+	margin-right:10%;
 	background-color:rgb(20, 20, 20);
 }
 .skill-bar.middle{
 	width:40%;
+	margin-right:20%;
 	background-color:rgb(40, 40, 40);
 }
 .skill-bar.next-to-last{
 	width:30%;
+	margin-right:30%;
 	background-color:rgb(70, 70, 70);
 }
 .skill-bar.last{
 	width:20%;
+	margin-right:40%;
 	background-color:rgb(100, 100, 100);
 }
 #skills br{
@@ -117,51 +127,31 @@ Yb,  88      `8b         I8         88  ,dP                                     
 }
 </style>
                 <div id='skills'>
-                	<div class='skill-text'>Coding</div><div class='first skill-bar'>PHP
-                	</div>
-                	<br>
-                	<div class='skill-text'>Layout</div><div class='second skill-bar'>HTML/HTML5/CSS
-                	</div>
-                	<br>
-                	<div class='skill-text'>Server Administration</div><div class='middle skill-bar'>APACHE/DEBIAN
-                	</div>
-                	<br>
-                	<div class='skill-text'>Frontend Interaction</div><div class='next-to-last skill-bar'>JQUERY/JS
-                	</div>
-                	<br>
-                	<div class='skill-text'>Image Design</div><div class='last skill-bar'>PHOTOSHOP
-                	</div>
-                	<br>
+                	<div class='skill-text'>Coding</div><div class='first skill-bar'>PHP</div>
+                	<div class='skill-text'>Layout</div><div class='second skill-bar'>HTML/HTML5/CSS</div>
+                	<div class='skill-text'>Server&nbsp;Administration</div><div class='middle skill-bar'>APACHE/DEBIAN</div>
+                	<div class='skill-text'>Frontend Interaction</div><div class='next-to-last skill-bar'>JQUERY/JS</div>
+                	<div class='skill-text'>Image Design</div><div class='last skill-bar'>PHOTOSHOP/INKSCAPE</div>
                 </div><!-- /skills -->
                 <p id='summary'>
                 <!-- <a id='show-more' href='#' title='Show the full overview'> -->
-                    <em>In a sentence, we code strong and stable php websites from the ground up...</em>
+                    <em>In a sentence, we code strong and stable php websites from server to database to visuals...</em>
                 <!-- </a> -->
                 </p>
                 
                 <p>
-                  Since 2003, Al and Roy have worked together, starting out working on the browser based game <a href='http://www.ninjawars.net'>NinjaWars.net</a> in Php and mysql, transitioning it to postgresql, html5, a templating system, and a long list of other improvements over the years. Since then we have worked together & separately on a variety of other projects, including web applications, a PHP/MySQL-based CMS system, technological modernization of an existing organization, most recently <a href='http://shermanbrothers.com'>shermanbrothers.com</a> and now BitLucid, Inc.
+                  Since 2003, Al and Roy have worked together, starting out working on the browser based game <a href='http://www.ninjawars.net'>NinjaWars.net</a> in php and mysql, transitioning it to postgresql, html5, a templating system, and making a long list of other improvements over the years. Since then we have worked together & separately on a variety of other projects, including web applications, a PHP/MySQL-based CMS system, technological modernization of an existing organization, most recently <a href='http://shermanbrothers.com'>shermanbrothers.com</a> and now BitLucid, Inc.
                 </p>
                 <p>In August of 2011 we incorporated as BitLucid, Inc. in order to smooth the process of managing subcontractors and common expenses, among other benefits.  We specialize in technology consultation, including web programming, creating websites from the ground-up, or recreating them where they already exist but need some love.  Two of our strengths in this arena are: Security & Usability.
                 </p>
-                <p> Security is paramount.  We have seen too many sites burned by bad php coding practices and with their client or employee data under attack as a result.  We have done a lot of security cleanup work on sites that were coded by programmers without any oversight, which resulted in compromised databases and a site that -looked- fine but was full of security holes.  Generally one of the first things that we do with a site is review it's password security for the presence of strong cryptography, often a pain point with naively programmed php websites that leads to problems.  We favor Object Oriented programming, but have also explored the benefits of Functional Programming as a simpler and faster alternative in some cases.  In the case of existing website codebases, we necessarily are flexible to a variety of coding styles.
+                <p> <abbr title='This includes securing sensitive data against release, keeping servers updated, etc'>Security</abbr> is paramount.  We have seen too many sites burned by bad php coding practices and with their client or employee data under attack as a result.  We have done a lot of security cleanup work on sites that were coded by programmers without any oversight, which resulted in compromised databases and a site that -looked- fine but was full of security holes.  Generally one of the first things that we do with a site is review it's password security for the presence of strong cryptography, often a pain point with naively programmed php websites that leads to problems.  We favor Object Oriented programming, but have also explored the benefits of Functional Programming as a simpler and faster alternative in some cases.  In the case of existing website codebases, we necessarily are flexible to a variety of coding styles.
                 </p>
                 <p>
-                  User experience is often another overlooked area where websites suffer.
-                </p>
-
-                <p>
-                Since 2003, I have coded and improved upon the browser based game <a href='http://www.ninjawars.net'>NinjaWars.net</a> as a personal project, have been professionally employed building customized web applications, working with a PHP/MySQL based CMS for the last 4 years, and have been designing websites in html/css long before that. 
+                  <abbr title='UX'>User experience</abbr> is often another overlooked area where websites suffer.  To a large extent, speed is the first step to a good user experience, especially for users with slow connections or older browsers.  Similarly, a level of simplicity and hierarchy to what a customer/client sees is important, to naturally lead them to the core content of the website, whether that is selling products or words.  And in this day & age, having the site be usable and simple for clarity on different mobile devices and browsers is important to reach a broader audience.  To acheive this we focus on building a site that is able to progressively degrade, still working without javascript or flash, still working without html5 or css3.
                 </p>
                 <p>
-				For me, security is paramount.  I've seen too many sites burned by bad php coding practices and under attack by sql-injection as a result.  I've done a lot of security cleanup work on sites that were coded by programmers without any oversight that resulted in compromised database data and a site that -looked- fine but was full of security holes.  And generally one of the first things that I do with a site is I review it's password security for the presence of strong security, that's frequently another pain point with the standard php website that leads to problem.  I usually program in an Object Oriented approach, though I have recently been exploring the benefits of Functional Programming as a simpler and faster alternative in some cases.  I'm flexible to working in a variety of coding styles, of course. 
-				</p>
-				<p>
-				I'm capable when it comes to Ajax-like functionality that can't be accomplished elegantly via PHP alone, though I wouldn't call myself a javascript guru mainly because I prefer to do progressive enhancement, accomplishing all the basic functionality on the server side in php, and then enhancing the user interface appropriately with javascript.  It is actually rare that there is functionality that I can't create server-side before styling it more with javascript.  I am fond of the great development speed and simplicity that the jQuery framework provides, so I especially enjoy working on sites using jQuery. 
-				</p>
-				<p>
-				Overall I enjoy the artistic side to creating good website design and the challenge of writing solid and secure PHP code as a website's foundation.
-				</p>
+                  Overall, we generally enjoy the <em>artistic</em> nature of creating <strong>strong</strong> websites, and the <em>challenge</em> of writing solid and secure PHP code as a foundation.
+                </p>
         </section><!-- /description -->
 	</article>
 			
@@ -169,19 +159,19 @@ Yb,  88      `8b         I8         88  ,dP                                     
 			
 			<aside>
 			<p>
-				Security conscious web programming with a
-			 	Detailed contracting work, renovation, painting, and murals.
+				Security conscious web programming with a penchant for user-friendliness.
 			</p>
 			<p>
 				Based in New York State
 			 </p>
 			<h3 class='skyfade'>Contact Us</h3>
-			
+
         <div id='chat-contact'>
             <iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqrjf9npqsvkbrebjdf5gu84463kuitp4ce6vcrvphritvj3q66rbvl2g3t5kmvsq7glo184jmr0548n6hrd0r84evcv5fl71efm503ja76ipt9ac8ru2dck9i2mtd9kj5bab8nbqv9da073h1p40cppcbn1f47vuk&amp;w=200&amp;h=60" frameborder="0" allowtransparency="true" width="200" height="60"></iframe>
         </div>
-        <img style="display:block; margin-right:4px;max-width:100%;max-height:300px;" src="http://bitlucid.com/images/roy.jpg" alt="Photo of Roy" class="photo"/>
-			<div itemscope='itemscope' itemtype="http://schema.org/LocalBusiness" id="contact">
+			<img style="display:block; margin-right:4px;max-width:100%;max-height:300px;" src="./images/roy.jpg" alt="Photo of Roy" class="photo"/>		
+
+			<div id="contact" itemscope='itemscope' itemtype="http://schema.org/LocalBusiness">
 				  	  <div class="vcard" id="hcard-BitLucid-Inc">
 						 <div itemprop="name" class="org">
 						 	BitLucid, Inc.
@@ -203,14 +193,14 @@ Yb,  88      `8b         I8         88  ,dP                                     
 						 	<a style="line-height: 20px;" title="mailto:roy.ronal.ds@gmail.com" href="mailto:roy.ronal.ds@gmail.com">roy.ronalds@gmail.com</a>
 						</div>
 					  </div><!-- /vcard -->
-			</div><!-- /contact -->
+			</div><!-- /contact -->	
 			
             <!-- START Hire Me on oDesk Widget -->
             
             <!-- START Email Footer Widget -->
             <div style="display: block; height: 55px;">
                 <div style="float:left; padding: 9px;">
-                    <a href="http://www.odesk.com/users/Ninjawars-net-PHP-Programmer-Webdesigner_~~fd05bd113899b002"><img src="http://www.odesk.com/images/hire_me_button.gif" style="border:0px;"></a>
+                    <a href="http://www.odesk.com/users/Ninjawars-net-PHP-Programmer-Webdesigner_~~fd05bd113899b002"><img src="http://www.odesk.com/images/hire_me_button.gif" style="border:0px;" alt='Hire Roy on Odesk' title='Hire Roy on Odesk'></a>
                 </div>
             </div>
             
@@ -289,7 +279,7 @@ Yb,  88      `8b         I8         88  ,dP                                     
 
 
 
-	<div id="footer-container">
+	<div id="footer-container"> <!-- Necessary for some of the border ornamentation of the footer -->
 		<footer class="wrapper skyfade">
 			<div hidden=hidden id='site-search'>
 			<h3>Search Our News Or Images</h3>
@@ -313,17 +303,25 @@ Yb,  88      `8b         I8         88  ,dP                                     
 			<small>
 				Brought to you by <a href='http://bitlucid.com' title='Designed &amp; Coded by BitLucid, Inc.'>Roy Ronalds of BitLucid, Inc</a>.
 			</small>
-			<small id='copyright'><a rel='license' href='http://creativecommons.org/licenses/by-sa/3.0/' style='color:white;'><img src='/images/copyleft-white-50px.png' alt='' style='width:10px;height:10px'> Copyleft <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"></a> since 2010 by BitLucid, Inc</small>
+			<small id='copyright' style='display:block' xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+			  <a rel="license"
+				 href="http://creativecommons.org/publicdomain/zero/1.0/"> <img src='/images/copyleft-white-50px.png' alt='' style='width:10px;height:10px'> Copyleft
+				<img src="http://i.creativecommons.org/p/zero/1.0/80x15.png" style="border-style: none;" alt="CC0" />
+			  </a>
+			  since 2010 by <a rel="dct:publisher"
+				 href="http://bitlucid.com">
+				<span property="dct:title">Roy Ronalds</span></a> of BitLucid, Inc.
+			</small>
 		</footer>
 	</div>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js"><\/script>')</script>
 
 <script src="js/threadhack.js"></script>
 <!-- Javascript templating lib -->
-<script src="js/ICanHaz.min.js"></script>
+<script src="js/libs/ICanHaz.min.js"></script>
 
 <!-- Javascript templates -->
 
