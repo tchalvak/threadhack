@@ -252,7 +252,9 @@ aside h3{
 	margin-top:0;
 	padding-top:.3em;
 }
-
+article header#intro h1{
+	line-height:.85;
+}
 article header h1, article h1{
 	margin-top:0;
 	padding-top:0;
@@ -260,7 +262,9 @@ article header h1, article h1{
 	text-shadow: 1px 1px 1px gray;
 }
 header .typewriter{
-	font-size:.9em;
+	font-size:.8em;
+	word-spacing:-.1em;
+	white-space:nowrap;
 }
 header .typewriter:before{
 	content:"\00a0";
