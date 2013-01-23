@@ -5,6 +5,7 @@ ServerName bitlucid.com
 	ServerAlias www.bitlucid.com
 	ServerAlias www.royronalds.com
 	ServerAlias royronalds.com
+	ServerAlias tersh.royronalds.com
 	ServerAlias *.bitlucid.com
 
 	RewriteEngine On
@@ -16,6 +17,9 @@ ServerName bitlucid.com
 	RewriteRule ^(.*)$ http://bitlucid.com$1 [L,R=301]
 
 	RewriteCond %{HTTP_HOST} ^royronalds\.com [NC]
+	RewriteRule ^(.*)$ http://bitlucid.com$1 [L,R=301]
+	
+	RewriteCond %{HTTP_HOST} ^tersh\.royronalds\.com [NC]
 	RewriteRule ^(.*)$ http://bitlucid.com$1 [L,R=301]
 
         DocumentRoot /home/kzqai/sites/threadhack/www/
