@@ -201,7 +201,7 @@ Bright-orange: #FF530D
    ========================================================================== */
 
 
-#contact #contact-tel a, #contact #contact-email a{
+#contact #contact-tel a, #contact #contact-email a, #fork-on-github a{
 	background-color:rgba(240, 240, 240, .7);
 	padding:.1em;
 	display:inline-block;
