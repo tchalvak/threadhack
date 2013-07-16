@@ -69,6 +69,10 @@ ServerName bitlucid.com
 # Cache control is set only if mod_headers is enabled, so that's unncessary to declare
 </IfModule>
 
+<IfModule mod_reqtimeout.c>
+RequestReadTimeout header=20-40,MinRate=500 body=20,MinRate=500
+</IfModule>
+
 
 # ----------------------------------------------------------------------
 # Cross-domain AJAX requests
