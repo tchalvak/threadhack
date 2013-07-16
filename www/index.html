@@ -324,21 +324,20 @@ Yb,  88      `8b         I8         88  ,dP                                     
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js"><\/script>')</script>
 
 <script src="js/threadhack.js"></script>
-<!-- Javascript templating lib -->
-<script src="js/libs/ICanHaz.min.js"></script>
-
-<!-- Javascript templates -->
-
-<!-- Mustache javascript template for dynamic flickr gallery creation -->
-<script id='gallery' type='text/html'>
-	<h1>{{title}}</h1>
-	<p>{{desc}}</p>
-	<object width="600" height="600"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url={{page_base_url}}show%2F&page_show_back_url={{page_base_url}}&set_id={{set_id}}&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url={{page_base_url}}show%2F&page_show_back_url={{page_base_url}}&set_id={{set_id}}&jump_to=" width="600" height="600"></embed></object>
-</script>
 
 <!-- Page load javascript -->
 
+<!-- Live Chat Trial -->
+<script type="text/javascript">
+var __lc = {};
+__lc.license = 2959562;
 
+(function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
 
 <!-- Google analytics comes dead last -->
   <script>
