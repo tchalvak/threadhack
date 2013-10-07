@@ -7,4 +7,11 @@
 #        php_value session.cookie_domain "threadhack.local"
 #        php_value auto_prepend_file "/home/kzqai/sites/threadhack/lib/lib/base.inc.php"
 #    </FilesMatch>
+
+<Directory "/home/kzqai/sites/threadhack/">
+Options All
+AllowOverride All
+Require all granted
+</Directory>
+
 </VirtualHost>
