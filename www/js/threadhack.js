@@ -7,6 +7,11 @@ if (typeof(console) == 'undefined') { console = { log: function() { } }; }
 
 
 $(function(){ // ON domload.
+	$('#other-sites-section').click(function(){
+		$('#contact-footer').toggle();
+	});
+
+	$('html').removeClass('no-js'); // Strip no-js when js is in use.
 	
 	var whitelist = ["portfolio","news","aboutus","pricing"];
 	var sections = $('#portfolio, #news, #aboutus, #pricing');
@@ -20,9 +25,10 @@ $(function(){ // ON domload.
 		}
 	}
 	
-	console.log('Current hash and id are', hash, id);
+	console.log('Current hash and id are [', hash, '] [', id, '] ', typeof hash, typeof id);
 	
-	if(!id){
+	if(!id || (('string' === typeof id) && id.trim() == "#")){
+		console.log('Hiding otherSections');
 		otherSections.hide(); // Hide all but the default starting section.
 	} else {
 		var $selected = $(id);
