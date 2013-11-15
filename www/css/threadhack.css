@@ -103,7 +103,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 
 
 /* ==============
-    MOBILE: Menu
+    MOBILE: Menu-specific
    ============== */
 
 header nav a{
@@ -183,6 +183,7 @@ Bright-orange: #FF530D
 
 #main article h1{
 	font-size:2em;
+	margin-top:1em;
 }
 
 #main aside{
@@ -207,6 +208,9 @@ blockquote:before {
 }
 blockquote p {
   display inline;
+}
+small{
+	color:gray;
 }
 
 
@@ -659,6 +663,13 @@ tr:last-child td.last {
 .price,#rate-card b{
 	color:#336633;
 }
+p.accented{
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	color:#c40;
+}
 
 .accented.fee.float-right{
 	border:thick solid dashed;
@@ -676,11 +687,11 @@ tr:last-child td.last {
 }
 
 /* Fancy-number-list */
-#fancy-list { min-width:320px; padding:1em; }
-#fancy-list ol { font-family:Georgia, Times, serif; font-size:1.3em;  }
-#fancy-list ol li { margin-bottom:0 }
-#fancy-list ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:1.1em; border-left: 1px solid #999; }
-#fancy-list ol li p em { display:block; }
+.fancy-list { min-width:320px; padding:1em; }
+.fancy-list ol { font-family:Georgia, Times, serif; font-size:1.3em;  }
+.fancy-list ol li { margin-bottom:0 }
+.fancy-list ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:1.1em; border-left: 1px solid #999; }
+.fancy-list ol li p em { display:block; }
 
 /*   Main page sizing */
 
