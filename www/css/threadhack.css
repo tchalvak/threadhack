@@ -209,7 +209,7 @@ blockquote:before {
 blockquote p {
   display inline;
 }
-small{
+small.de-em{
 	color:gray;
 }
 
@@ -684,6 +684,11 @@ p.accented{
 /* Widgets */
 .text-centered{
 	text-align:center;
+}
+
+.glass-box{
+	display:block;
+	margin:1em;
 }
 
 /* Fancy-number-list */
