@@ -190,6 +190,26 @@ Bright-orange: #FF530D
 	float:none;
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display inline;
+}
+
+
 #footer-container footer{
 	padding:20px 0;
 }
@@ -262,6 +282,18 @@ aside figure figcaption{
 	text-align:center;
 }
 
+aside h3{
+	border-radius:.2em;
+	padding:.3em;
+	background-color:lightblue;
+	color:#333;
+	text-align:center;
+}
+
+aside .social + .social{
+	margin-top:1em;
+}
+
 /* Contact social media/developer links */
 #other-sites-section:after{
 	content:"\2335";
@@ -307,19 +339,6 @@ aside figure figcaption{
 }
 #contact-tel{
 	margin-bottom:.5em;
-}
-
-
-aside h3{
-	border-radius:.2em;
-	padding:.3em;
-	background-color:lightblue;
-	color:#333;
-	text-align:center;
-}
-
-aside .social + .social{
-	margin-top:1em;
 }
 
 
@@ -470,6 +489,10 @@ h2.caligraphy {font: 30px/34px 'CalligraphyFLFRegular', 'Times New Roman', Times
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
+
+   header nav a{
+		margin-bottom:0;
+   }
 
 	#header-container,
 	#main aside{
