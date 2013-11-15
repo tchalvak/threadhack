@@ -30,23 +30,24 @@ Yb,  88      `8b         I8         88  ,dP                                     
 
 	<link rel="stylesheet" href="css/threadhack.css">
     <link rel="shortcut icon" href="/threadhack_favicon.ico" type="image/x-icon">
-
-  <!-- All JavaScript at the bottom, except for Modernizr and Respond.
-       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries -->
-	<!--[if lt IE 9]>
-	<script src="js/libs/html5-3.4-respond-1.1.0.min.js"></script>
-	<![endif]-->
+    <script src="js/html5.js"></script>
+    <!-- All other, non-crucial javascript at the bottom -->
 </head>
 <body>
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
  <div id="header-container" class='skyfade'>
 		<header class="wrapper clearfix">
-			<h1 id="title">BitLucid <br>Programming</h1>
-			<figure id='logo-box'>
+		  <div id='title-and-logo-box'>
+		  	<a href='/' title='Go back to main'>
+			<h1 id="title">
+				BitLucid <br>Programming
+			</h1><!-- No space
+			inbetween --><figure id='logo-box'>
 				<img id='logo' src='/images/threadhackwave.png' width='95' height='95' alt=''>
 			</figure>
-			<nav>
+			</a>
+		  </div><!-- End of #title-and-logo-box -->
+			<nav role='navigation'>
 				<ul>
 					<li><a href="#news">News</a></li>
 					<li><a href="#pricing">Pricing</a></li>
@@ -104,72 +105,7 @@ Yb,  88      `8b         I8         88  ,dP                                     
                 </p>
         </section><!-- /description -->
 	</article>
-			
-			<aside>
-			<p>
-				<em>Security-conscious</em> web programming with a love of speed & ease-of-use.
-			</p>
-			<h3 class='skyfade'>Contact Us</h3>
-
-			<div id="contact" itemscope='itemscope' itemtype="http://schema.org/LocalBusiness">
-				  	  <div class="vcard" id="hcard-BitLucid-Inc">
-						 <div itemprop="name" class="org">
-						 	BitLucid Programming
-						 </div>
-						 <address itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address" class="adr">
-						  <div class="street-address" itemprop="streetAddress">
-						  100 Hunts Park Road
-						  </div>
-						  <span itemprop="addressLocality" class="locality">Farmington</span>, 
-						  <span itemprop="addressRegion" class="region">NY</span>, 
-						  <span class="postal-code">14425</span><br>
-						  <span class="country-name">USA</span>
-						  </address>
-
-						 
-						<div id='contact-tel'><a class="tel" href="tel:5855197658" itemprop="telephone">585 519 7658</a>
-						</div>
-						<div id='contact-email' itemprop='email'>
-						 	<a title="mailto:roy.ronal.ds@gmail.com" href="mailto:roy.ronal.ds@gmail.com">roy.ronalds@gmail.com</a>
-						</div>
-					  </div><!-- /vcard -->
-			</div><!-- /contact -->	
-
-			<figure>
-			  <img src="./images/roy.jpg" alt="Photo of Roy" class="photo"/>
-			  <figcaption>Roy Ronalds</figcaption>
-			<figure>
-
-			<h3 id='other-sites-section'>On Other Sites</h3>
-
-            <!-- START Hire Me on oDesk Widget -->
-            <div id='contact-footer-box'>
-	            <div id='contact-footer'>
-	            	<div id='odesk-area-box'>
-		                <div class='interior'>
-		                    <a href="http://www.odesk.com/users/Ninjawars-net-PHP-Programmer-Webdesigner_~~fd05bd113899b002"><img src="http://www.odesk.com/images/hire_me_button.gif"  alt='Hire Roy on Odesk' title='Hire Roy on Odesk'></a>
-		                </div>
-	                </div>
-
-					<div id='fork-on-github' class='social'>
-						<a href='http://github.com/BitLucid'>Fork everything on github</a>
-					</div>
-
-					<div id='stackoverflow' class='social'>
-					    <div><strong>Answers on stackoverflow</strong></div>
-					    <a href="http://stackoverflow.com/users/69993/kzqai?theme=clean">
-		<img src="http://stackoverflow.com/users/flair/69993.png" width="208" height="58" alt="profile for Kzqai at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Kzqai at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-		</a>
-					</div>
-
-					<div id='linkedin' class='social'>
-						<a href='http://www.linkedin.com/in/royronalds/'>Roy Ronalds on linkedin</a>
-					</div>
-				</div><!-- End of #contact-footer -->
-			</div><!-- End of contact-footer-box -->
-			
-			</aside>
-			
+	
 			
 			<article id='portfolio'>
 				<header>
@@ -212,13 +148,13 @@ Yb,  88      `8b         I8         88  ,dP                                     
 
 			<article id='pricing'>
 				<header>
-					<h1>BitLucid Webdesign Rate Card</h1>
+					<h1>BitLucid Rate Card</h1>
 					<p>We specialize in secure web applications, built from the server up for speed and ease of use for you and your clients in mind.</p>
 				</header>
 
             <section id='rate-card'>
             	<table cellspacing="0">
-				    <tr><td>Initial Site Speed or Code System Analysis upon request</td><td><em class='fee accented float-right'>free</em></td></tr>
+				    <tr><td>Initial Site Speed or Code System Analysis</td><td><em class='fee accented float-right'>free</em></td></tr>
 			    </table>
 
                 <h2>Project Initialization</h2>
@@ -283,6 +219,72 @@ Yb,  88      `8b         I8         88  ,dP                                     
 						</div>
 				</section>
 			</article>
+
+
+			<aside>
+			<p>
+				<em>Security-conscious</em> web programming with a love of speed & ease-of-use.
+			</p>
+			<h3 class='skyfade'>Contact Us</h3>
+
+			<div id="contact" itemscope='itemscope' itemtype="http://schema.org/LocalBusiness">
+				  	  <div class="vcard" id="hcard-BitLucid-Inc">
+						 <div itemprop="name" class="org">
+						 	BitLucid Programming
+						 </div>
+						 <address itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address" class="adr">
+						  <div class="street-address" itemprop="streetAddress">
+						  100 Hunts Park Road
+						  </div>
+						  <span itemprop="addressLocality" class="locality">Farmington</span>, 
+						  <span itemprop="addressRegion" class="region">NY</span>, 
+						  <span class="postal-code">14425</span><br>
+						  <span class="country-name">USA</span>
+						  </address>
+
+						 
+						<div id='contact-tel'><a class="tel" href="tel:5855197658" itemprop="telephone">585 519 7658</a>
+						</div>
+						<div id='contact-email' itemprop='email'>
+						 	<a title="mailto:roy.ronal.ds@gmail.com" href="mailto:roy.ronal.ds@gmail.com">roy.ronalds@gmail.com</a>
+						</div>
+					  </div><!-- /vcard -->
+			</div><!-- /contact -->	
+
+			<figure>
+			  <img src="./images/roy.jpg" alt="Photo of Roy" class="photo"/>
+			  <figcaption>Roy Ronalds</figcaption>
+			<figure>
+
+			<h3 id='other-sites-section'>On Other Sites</h3>
+
+            <!-- START Hire Me on oDesk Widget -->
+            <div id='contact-footer-box'>
+	            <div id='contact-footer'>
+	            	<div id='odesk-area-box'>
+		                <div class='interior'>
+		                    <a href="http://www.odesk.com/users/Ninjawars-net-PHP-Programmer-Webdesigner_~~fd05bd113899b002"><img src="http://www.odesk.com/images/hire_me_button.gif"  alt='Hire Roy on Odesk' title='Hire Roy on Odesk'></a>
+		                </div>
+	                </div>
+
+					<div id='fork-on-github' class='social'>
+						<a href='http://github.com/BitLucid'>Fork everything on github</a>
+					</div>
+
+					<div id='stackoverflow' class='social'>
+					    <div><strong>Answers on stackoverflow</strong></div>
+					    <a href="http://stackoverflow.com/users/69993/kzqai?theme=clean">
+		<img src="http://stackoverflow.com/users/flair/69993.png" width="208" height="58" alt="profile for Kzqai at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Kzqai at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+		</a>
+					</div>
+
+					<div id='linkedin' class='social'>
+						<a href='http://www.linkedin.com/in/royronalds/'>Roy Ronalds on linkedin</a>
+					</div>
+				</div><!-- End of #contact-footer -->
+			</div><!-- End of contact-footer-box -->
+			
+			</aside>
 
 
 		</div> <!-- #main -->

@@ -106,17 +106,20 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
     MOBILE: Menu
    ============== */
 
-nav a{
-	display:block;
+header nav a{
+	display:inline-block;
 	margin-bottom:10px;
-	padding:15px 0;
-
+	padding:15px 1%;
+	width:98%;
 	background:#e44d26;
 	color:white;
-
 	text-align:center;
 	text-decoration:none;
 	font-weight:bold;
+}
+header nav ul li{
+	display:block;
+	width:100%;
 }
 
 nav a:hover, nav a:visited{
@@ -156,7 +159,7 @@ nav a:hover{
 ::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
 ::selection      { background: #f16529; color: #fff; text-shadow: none; }
 
-nav a{
+header nav a{
 	background:#3F5765;
 }
 
@@ -183,10 +186,30 @@ Bright-orange: #FF530D
 
 #main aside{
 	padding:0px 5% 10px;
+	float:none;
 }
 
 #footer-container footer{
 	padding:20px 0;
+}
+
+#title-and-logo-box{
+	display:inline-block;
+	white-space:nowrap;
+}
+#title-and-logo-box a{
+	text-decoration:none;
+	display:block;
+}
+
+#logo-box{
+	padding:.1em 0 .5em;
+	display:inline-block;
+	vertical-align:	top;
+}
+
+#title{
+	display:inline-block;
 }
 
 /* ===============
@@ -406,26 +429,28 @@ h2.caligraphy {font: 30px/34px 'CalligraphyFLFRegular', 'Times New Roman', Times
     INTERMEDIATE: Menu
    ==================== */
 	
-	nav a{
-		float:left;
-		width:27%;
-		margin:0 1.7%;
-		padding:25px 2%;
-		margin-bottom:0;
+	header nav a{
+		display:inline-block;
+		width:96%;
+		padding:25px 1%;
 	}
 	
-	nav li:first-child a{ margin-left:0;  }
-	nav li:last-child  a{ margin-right:0; }
+	header nav li:first-child a{ margin-left:0;  }
+	header nav li:last-child  a{ margin-right:0; }
 	
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
 
-	nav ul li{
-		display:inline;
-	}	
+	header nav ul li{
+		display:inline-block;
+	}
 	.oldie nav a{
 		margin:0 0.7%;		
+	}
+
+	#title-and-logo-box{
+		width:48%;
 	}
 }
 
@@ -445,14 +470,14 @@ h2.caligraphy {font: 30px/34px 'CalligraphyFLFRegular', 'Times New Roman', Times
 /* ============
     WIDE: Menu
    ============ */
-	
-	#title{
-		float:left;
-	}
 
-	nav{
-		float:right;
-		width:38%;
+	header nav{
+		display:inline-block;
+		width:50%;
+		vertical-align:bottom;
+	}
+	header nav li{
+		max-width:20%;
 	}
 
 /* ============
