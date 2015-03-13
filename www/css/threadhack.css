@@ -433,25 +433,25 @@ font-face section, loaded first for speed reasons
   font-family: 'Gentium Basic';
   font-style: normal;
   font-weight: 400;
-  src: local('Gentium Basic'), local('GentiumBasic'), url(http://themes.googleusercontent.com/static/fonts/gentiumbasic/v5/KCktj43blvLkhOTolFn-MZ_RtrTXGeaL_Dia6_H9gNs.woff) format('woff');
+  src: local('Gentium Basic'), local('GentiumBasic'), url(//themes.googleusercontent.com/static/fonts/gentiumbasic/v5/KCktj43blvLkhOTolFn-MZ_RtrTXGeaL_Dia6_H9gNs.woff) format('woff');
 }
 @font-face {
   font-family: 'Gentium Basic';
   font-style: italic;
   font-weight: 400;
-  src: local('Gentium Basic Italic'), local('GentiumBasic-Italic'), url(http://themes.googleusercontent.com/static/fonts/gentiumbasic/v5/qoFz4NSMaYC2UmsMAG3lySC-qRU_6_vWulQf4LzJBHg.woff) format('woff');
+  src: local('Gentium Basic Italic'), local('GentiumBasic-Italic'), url(//themes.googleusercontent.com/static/fonts/gentiumbasic/v5/qoFz4NSMaYC2UmsMAG3lySC-qRU_6_vWulQf4LzJBHg.woff) format('woff');
 }
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
-  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+  src: local('Ubuntu'), url(//themes.googleusercontent.com/static/fonts/ubuntu/v5/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
 }
 @font-face {
   font-family: 'Ubuntu Condensed';
   font-style: normal;
   font-weight: 400;
-  src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(http://themes.googleusercontent.com/static/fonts/ubuntucondensed/v4/DBCt-NXN57MTAFjitYxdrFzqCfRpIA3W6ypxnPISCPA.woff) format('woff');
+  src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(//themes.googleusercontent.com/static/fonts/ubuntucondensed/v4/DBCt-NXN57MTAFjitYxdrFzqCfRpIA3W6ypxnPISCPA.woff) format('woff');
 }
 
 
