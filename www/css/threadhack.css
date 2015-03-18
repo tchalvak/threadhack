@@ -699,6 +699,9 @@ p.accented{
 .text-centered{
 	text-align:center;
 }
+.centered{
+	text-align:center;margin-left:auto;margin-right:auto;
+}
 
 .glass-box{
 	display:block;
