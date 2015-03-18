@@ -29,7 +29,7 @@ body#bitlucid-payment{
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .stamp{
-  width:80%;min-width:500px;margin-left:auto;margin-right:auto;padding:0.5em 4em 2em;border:thin dashed #dea9de;border-radius:0.7em;
+  width:80%;min-width:500px;margin-left:auto;margin-right:auto;padding:5em 4em 10em;border:thick dashed #dea9de;border-radius:0.7em;
 }
 .stamp:not(button){
   color:ghostwhite;background-color:#d6bad0;font-weight:bold;
@@ -42,7 +42,10 @@ body#bitlucid-payment{
   text-align:center;
 }
 .button-box{
-  text-align:center;
+  text-align:center;font-size:larger;
+}
+#bitlucid-payment footer{
+  margin-top:5em;
 }
 
 </style>
@@ -75,6 +78,9 @@ body#bitlucid-payment{
   <footer>
     <div class='centered'>
       <small>This site is encrypted with ssl technology, and all of the credit card information is stored with the Stripe Financial processor of stripe.com</small>
+    </div>
+    <div class='contact centered'>
+    <a href="/#contact">contact us</a>
     </div>
   </footer>
 </body>
@@ -117,7 +123,8 @@ if(window.location.hash) {
         $('header h1').text(desc);
       console.log(plan);
     } else {
-      $('#services-payment-area').prepend('<p class="error">Sorry, no such plan was found, but you can make a standard $50 payment if you would prefer');
+      var planUnavailable = '<p class="error">You requested a plan that we don\'t have, but you can make a standard payment below if you would prefer.';
+      $('#services-payment-area').prepend(planUnavailable);
       console.log('No such plan '+hash+' available from:', plans);
     }
   }
