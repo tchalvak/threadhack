@@ -2,4 +2,4 @@ Repository for the code of [BitLucid Programming](http://bitlucid.com) http://bi
 
 This site structure is also useful as a template.
 
-We have now moved to a wordpress site, see here: https://github.com/BitLucid/bitlucid
+There is also a wordpress equivalent of this site, see here: https://github.com/BitLucid/bitlucid
