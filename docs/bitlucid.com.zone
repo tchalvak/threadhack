@@ -1,0 +1,25 @@
+; bitlucid.com Dumped Mon Mar 21 14:30:23 2016
+;
+bitlucid.com.   86400   IN  SOA ns1.he.net. hostmaster.he.net. (
+                    2015052000  ;serial
+                    86400       ;refresh
+                    7200        ;retry
+                    2419200     ;expire
+                    3600    )   ;minimum
+bitlucid.com.   300 IN  A   184.106.100.92
+bitlucid.com.   300 IN  MX  10 mail.bitlucid.com.
+bitlucid.com.   300 IN  NS  ns1.afraid.org.
+bitlucid.com.   300 IN  NS  ns1.he.net.
+bitlucid.com.   300 IN  NS  ns2.afraid.org.
+bitlucid.com.   300 IN  NS  ns2.he.net.
+bitlucid.com.   300 IN  NS  ns3.afraid.org.
+bitlucid.com.   300 IN  NS  ns3.he.net.
+bitlucid.com.   300 IN  NS  ns4.afraid.org.
+bitlucid.com.   300 IN  NS  ns4.he.net.
+dev.bitlucid.com.   300 IN  CNAME   bitlucid.com.
+ftp.bitlucid.com.   300 IN  CNAME   bitlucid.com.
+mail.bitlucid.com.  300 IN  A   162.209.10.190
+msb.bitlucid.com.   300 IN  CNAME   bitlucid.com.
+www.bitlucid.com.   300 IN  CNAME   bitlucid.com.
+roy.bitlucid.com.   86400   IN  CNAME   bitlucid.com.
+bitlucid.com.   86400   IN  AAAA    2001:4801:7901:0:44ee:e001:0:1
