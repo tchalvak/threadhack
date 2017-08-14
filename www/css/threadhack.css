@@ -346,6 +346,11 @@ aside .social + .social{
 	max-width:100%;
 }
 
+/* Hide controls */
+.iframe-controls-container, .tmblr-iframe--unified-controls{
+	display:none !important;
+}
+
 .tumblr_title, .tumblr_title a{
 	font-size: 2em;
 	font-weight: bold;
